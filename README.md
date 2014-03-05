@@ -6,10 +6,10 @@ Vagrant configuration for running a simple puppet agent
 ## Start VMs
 
 	vagrant up
+	vagrant ssh
 
 ## Create client configuration
 
-	vagrant ssh
 	sudo vi /etc/puppet/manifests/init.pp
 
 	class test {
@@ -25,5 +25,4 @@ Vagrant configuration for running a simple puppet agent
 
 ## run client configuration
 
-	vagrant ssh
 	sudo puppet apply --verbose
